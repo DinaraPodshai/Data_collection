@@ -1,0 +1,263 @@
+Chocolife ETL Pipeline Using Apache Airflow**
+
+## **1. Introduction**
+
+The goal of this lab work was to build a complete ETL (Extract–Transform–Load) data pipeline using **Apache Airflow**.
+The pipeline collects product information from a website, cleans it, analyzes it, exports the data to CSV, and saves it into an SQLite database.
+Finally, the pipeline is automated using Airflow DAGs and executed inside the local Airflow environment.
+
+---
+
+## **2. Environment Setup**
+
+To work with Airflow, a virtual environment was created.
+
+### **2.1 Create and activate virtual environment**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### **2.2 Install required packages**
+
+```bash
+pip install apache-airflow
+pip install pandas requests beautifulsoup4
+```
+
+### **2.3 Initialize Airflow**
+
+```bash
+airflow db init
+```
+
+### **2.4 Create Airflow folders**
+
+```bash
+mkdir -p ~/airflow/project/src
+mkdir -p ~/airflow/project/data
+```
+
+---
+
+## **3. Project Structure**
+
+Your project was organized like this:
+
+```
+airflow/
+ └── dags/
+ │     └── chocolife_etl.py
+ └── project/
+        └── src/
+             scraper.py
+             clean.py
+             analyze.py
+             final_csv.py
+             save_sqlite.py
+        └── data/
+```
+
+### Description of each file:
+
+| File                 | Purpose                                                   |
+| -------------------- | --------------------------------------------------------- |
+| **scraper.py**       | Extracts raw product data from website                    |
+| **clean.py**         | Cleans scraped data (remove empty values, fix formatting) |
+| **analyze.py**       | Makes simple analysis (average price, count items, etc.)  |
+| **final_csv.py**     | Saves final cleaned dataset to CSV                        |
+| **save_sqlite.py**   | Saves data to SQLite database                             |
+| **chocolife_etl.py** | Airflow DAG that organizes the entire ETL process         |
+
+---
+
+## **4. ETL Script Overview**
+
+### **4.1 Scraping**
+
+The script downloads HTML using `requests` and parses it using `BeautifulSoup`.
+Extracted fields:
+
+* product name
+* price
+* discount
+* link
+* category
+
+Output: `raw_data.json`
+
+---
+
+### **4.2 Cleaning**
+
+Cleaning operations include:
+
+* remove rows with missing values
+* convert strings to numbers
+* normalize text fields
+* remove duplicates
+
+Output: `cleaned_data.json`
+
+---
+
+### **4.3 Analysis**
+
+Performed simple metrics:
+
+* item count
+* average price
+* most expensive product
+* cheapest product
+
+Output: printed into logs and saved into memory.
+
+---
+
+### **4.4 Export to CSV**
+
+Dataset is saved:
+
+```
+~/airflow/project/data/final_data.csv
+```
+
+---
+
+### **4.5 Saving into SQLite**
+
+Data is inserted into:
+
+```
+~/airflow/project/data/products.db
+```
+
+Using:
+
+```python
+import sqlite3
+conn = sqlite3.connect(DB_PATH)
+df.to_sql("products", conn, if_exists="replace", index=False)
+```
+
+---
+
+## **5. Airflow DAG**
+
+The DAG coordinates all tasks and sets dependencies.
+
+### **DAG structure:**
+
+```python
+scrape >> clean >> analyze >> final_csv >> save_sqlite
+```
+
+### **DAG schedule:**
+
+Runs **daily** at midnight.
+
+### **Operators:**
+
+Each script is executed using `PythonOperator`.
+
+---
+
+## **6. Running Airflow**
+
+### **6.1 Start the webserver**
+
+```bash
+airflow webserver -p 8080
+```
+
+### **6.2 Start the scheduler**
+
+```bash
+airflow scheduler
+```
+
+Dashboard available at:
+
+```
+http://localhost:8080
+```
+
+---
+
+## **7. Debugging and Fixes**
+
+During the lab, several issues were fixed:
+
+### **7.1 Port 8793 "already in use"**
+
+Multiple old Python processes blocked Airflow.
+
+Solution:
+
+```bash
+lsof -i :8793
+kill -9 <PID>
+```
+
+### **7.2 DAG failing due to incorrect imports**
+
+Fixed by using full import paths:
+
+```python
+from scraper import scrape
+from clean import clean_data
+from analyze import analyze
+from save_sqlite import save_to_db
+from final_csv import export_csv
+```
+
+### **7.3 Wrong file paths**
+
+Added dynamic paths:
+
+```python
+BASE_PATH = os.path.expanduser("~/airflow/project/src")
+os.chdir(BASE_PATH)
+```
+
+### **7.4 DAG not visible**
+
+Solution: Put DAG file in:
+
+```
+~/airflow/dags/chocolife_etl.py
+```
+
+---
+
+## **8. Final Result**
+
+✔ Airflow webserver and scheduler run successfully
+✔ The DAG appears in the UI
+✔ All tasks run in correct order
+✔ Pipeline executes ETL completely
+✔ Output files are generated:
+
+```
+final_data.csv
+products.db
+```
+
+✔ DAG statuses turn **green (Success)**, matching expected results
+
+---
+
+## **9. Conclusion**
+
+In this lab, a complete ETL workflow was implemented using Python and Apache Airflow.
+The pipeline successfully:
+
+* scraped data
+* cleaned and analyzed it
+* exported results to CSV
+* saved data into SQLite
+* automated the process with Airflow
+
+You also practiced debugging Airflow services, fixing import paths, and managing UNIX processes.
+This knowledge is essential for building production data pipelines.
