@@ -1,0 +1,12 @@
+📊 ANALYSIS REPORT
+=====================
+Total deals: 0
+Average price: 0.00
+Cheapest price: 0.00
+Most expensive price: 0.00
+
+TOP 5 CHEAPEST:
+No items
+
+TOP 5 MOST EXPENSIVE:
+No items
