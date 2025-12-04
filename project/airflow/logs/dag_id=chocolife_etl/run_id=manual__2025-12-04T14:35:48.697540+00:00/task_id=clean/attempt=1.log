@@ -1,0 +1,42 @@
+[2025-12-04T19:36:10.563+0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-04T19:36:10.594+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: chocolife_etl.clean manual__2025-12-04T14:35:48.697540+00:00 [queued]>
+[2025-12-04T19:36:10.601+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: chocolife_etl.clean manual__2025-12-04T14:35:48.697540+00:00 [queued]>
+[2025-12-04T19:36:10.601+0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-04T19:36:10.617+0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): clean> on 2025-12-04 14:35:48.697540+00:00
+[2025-12-04T19:36:10.620+0500] {standard_task_runner.py:64} INFO - Started process 14689 to run task
+[2025-12-04T19:36:10.627+0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'chocolife_etl', 'clean', 'manual__2025-12-04T14:35:48.697540+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/chocolife_etl.py', '--cfg-path', '/var/folders/z6/wpxm1jjd6v1_9vjhgwxr3ymh0000gn/T/tmpd55_yv2l']
+[2025-12-04T19:36:10.629+0500] {standard_task_runner.py:91} INFO - Job 6: Subtask clean
+[2025-12-04T19:36:10.684+0500] {task_command.py:426} INFO - Running <TaskInstance: chocolife_etl.clean manual__2025-12-04T14:35:48.697540+00:00 [running]> on host macbook-air-abstract.local
+[2025-12-04T19:36:10.753+0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='chocolife_etl' AIRFLOW_CTX_TASK_ID='clean' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T14:35:48.697540+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T14:35:48.697540+00:00'
+[2025-12-04T19:36:10.756+0500] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-04T19:36:10.815+0500] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-04T19:36:10.818+0500] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/airflow/dags/chocolife_etl.py", line 27, in <lambda>
+    python_callable=lambda: run_script("clean.py"),
+                            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/airflow/dags/chocolife_etl.py", line 10, in run_script
+    subprocess.run(["python3", os.path.join(BASE_PATH, script_name)], check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '/Users/admin/airflow/project/src/clean.py']' returned non-zero exit status 1.
+[2025-12-04T19:36:10.828+0500] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=chocolife_etl, task_id=clean, run_id=manual__2025-12-04T14:35:48.697540+00:00, execution_date=20251204T143548, start_date=20251204T143610, end_date=20251204T143610
+[2025-12-04T19:36:10.844+0500] {standard_task_runner.py:110} ERROR - Failed to execute job 6 for task clean (Command '['python3', '/Users/admin/airflow/project/src/clean.py']' returned non-zero exit status 1.; 14689)
+[2025-12-04T19:36:10.851+0500] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-04T19:36:10.876+0500] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-04T19:36:10.882+0500] {local_task_job_runner.py:222} INFO - ::endgroup::

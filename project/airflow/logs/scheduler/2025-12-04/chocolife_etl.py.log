@@ -1,0 +1,119 @@
+[2025-12-04T19:32:27.654+0500] {processor.py:161} INFO - Started process (PID=14529) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:32:27.656+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:32:27.656+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:27.656+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:32:27.710+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:32:28.432+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:28.432+0500] {override.py:1858} INFO - Created Permission View: can edit on DAG:chocolife_etl
+[2025-12-04T19:32:28.443+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:28.443+0500] {override.py:1858} INFO - Created Permission View: can delete on DAG:chocolife_etl
+[2025-12-04T19:32:28.451+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:28.450+0500] {override.py:1858} INFO - Created Permission View: can read on DAG:chocolife_etl
+[2025-12-04T19:32:28.452+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:28.451+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:32:28.464+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:28.463+0500] {dag.py:3111} INFO - Creating ORM DAG for chocolife_etl
+[2025-12-04T19:32:28.478+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:32:28.478+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-03 00:00:00+00:00, run_after=2025-12-04 00:00:00+00:00
+[2025-12-04T19:32:28.507+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.859 seconds
+[2025-12-04T19:35:26.059+0500] {processor.py:161} INFO - Started process (PID=14652) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:35:26.062+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:35:26.063+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:35:26.063+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:35:26.092+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:35:26.202+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:35:26.201+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:35:26.220+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:35:26.220+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-03 00:00:00+00:00, run_after=2025-12-04 00:00:00+00:00
+[2025-12-04T19:35:26.243+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.186 seconds
+[2025-12-04T19:37:54.010+0500] {processor.py:161} INFO - Started process (PID=14754) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:37:54.012+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:37:54.013+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:37:54.013+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:37:54.048+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:37:54.160+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:37:54.160+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:37:54.181+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:37:54.180+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:37:54.202+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.196 seconds
+[2025-12-04T19:39:54.580+0500] {processor.py:161} INFO - Started process (PID=14830) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:39:54.582+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:39:54.583+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:39:54.583+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:39:54.625+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:39:54.777+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:39:54.777+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:39:54.806+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:39:54.806+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:39:54.834+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.258 seconds
+[2025-12-04T19:42:12.359+0500] {processor.py:161} INFO - Started process (PID=14914) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:42:12.361+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:42:12.362+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:42:12.362+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:42:12.391+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:42:12.498+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:42:12.498+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:42:12.516+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:42:12.516+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:42:12.537+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.180 seconds
+[2025-12-04T19:44:27.904+0500] {processor.py:161} INFO - Started process (PID=14985) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:44:27.906+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:44:27.907+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:44:27.907+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:44:27.936+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:44:28.196+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:44:28.195+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:44:28.260+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:44:28.259+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:44:28.332+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.431 seconds
+[2025-12-04T19:46:56.078+0500] {processor.py:161} INFO - Started process (PID=15083) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:46:56.081+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:46:56.082+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:46:56.081+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:46:56.109+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:46:56.225+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:46:56.225+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:46:56.255+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:46:56.254+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:46:56.282+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.206 seconds
+[2025-12-04T19:49:10.246+0500] {processor.py:161} INFO - Started process (PID=15160) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:49:10.248+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:49:10.249+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:49:10.249+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:49:10.277+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:49:10.386+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:49:10.385+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:49:10.404+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:49:10.404+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:49:10.425+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.183 seconds
+[2025-12-04T19:51:07.652+0500] {processor.py:161} INFO - Started process (PID=15223) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:51:07.654+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:51:07.655+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:51:07.655+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:51:07.683+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:51:07.797+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:51:07.797+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:51:07.816+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:51:07.815+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:51:07.837+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.188 seconds
+[2025-12-04T19:53:08.349+0500] {processor.py:161} INFO - Started process (PID=15339) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:53:08.351+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:53:08.352+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:53:08.352+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:53:08.379+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:53:08.487+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:53:08.487+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:53:08.506+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:53:08.506+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:53:08.527+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.181 seconds
+[2025-12-04T19:55:00.644+0500] {processor.py:161} INFO - Started process (PID=15402) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:55:00.646+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:55:00.647+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:55:00.646+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:55:00.674+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:55:00.803+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:55:00.802+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:55:00.823+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:55:00.823+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:55:00.849+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.208 seconds
+[2025-12-04T19:56:54.658+0500] {processor.py:161} INFO - Started process (PID=15466) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:56:54.660+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T19:56:54.661+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:56:54.661+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:56:54.688+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T19:56:54.799+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:56:54.799+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T19:56:54.818+0500] {logging_mixin.py:188} INFO - [2025-12-04T19:56:54.818+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T19:56:54.844+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.189 seconds
+[2025-12-04T20:40:30.403+0500] {processor.py:161} INFO - Started process (PID=15548) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:40:30.406+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T20:40:30.406+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:40:30.406+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:40:30.437+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:40:30.635+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:40:30.634+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T20:40:30.660+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:40:30.659+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T20:40:30.690+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.290 seconds
+[2025-12-04T20:43:32.744+0500] {processor.py:161} INFO - Started process (PID=15695) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:43:32.753+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T20:43:32.755+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:32.754+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:43:32.791+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:43:32.947+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:32.946+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T20:43:32.978+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:32.977+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T20:43:33.314+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:33.314+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T20:43:33.321+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:33.321+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T20:43:34.200+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:34.200+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T20:43:34.208+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:43:34.207+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T20:46:19.535+0500] {processor.py:161} INFO - Started process (PID=15823) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:46:19.537+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T20:46:19.538+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:46:19.538+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:46:19.566+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:46:19.811+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:46:19.811+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T20:46:19.828+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:46:19.827+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T20:46:19.849+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.317 seconds
+[2025-12-04T20:48:30.477+0500] {processor.py:161} INFO - Started process (PID=15891) to work on /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:48:30.478+0500] {processor.py:830} INFO - Processing file /Users/admin/airflow/dags/chocolife_etl.py for tasks to queue
+[2025-12-04T20:48:30.479+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:48:30.479+0500] {dagbag.py:545} INFO - Filling up the DagBag from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:48:30.510+0500] {processor.py:840} INFO - DAG(s) 'chocolife_etl' retrieved from /Users/admin/airflow/dags/chocolife_etl.py
+[2025-12-04T20:48:30.643+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:48:30.643+0500] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-04T20:48:30.665+0500] {logging_mixin.py:188} INFO - [2025-12-04T20:48:30.665+0500] {dag.py:3947} INFO - Setting next_dagrun for chocolife_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T20:48:30.687+0500] {processor.py:183} INFO - Processing /Users/admin/airflow/dags/chocolife_etl.py took 0.213 seconds
